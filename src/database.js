@@ -12,7 +12,7 @@ async function dbConnect() {
     return;
   }
 
-  const db = await mongoose.connect(process.env.MONGODB_URI, {
+  const db = await mongoose.connect(process.env.MONGODB_URI + "/suxces-ecommerce", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });
